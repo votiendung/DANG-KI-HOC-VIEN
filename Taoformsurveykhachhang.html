@@ -1,10 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html">
 <head>
-    <meta charset="UTF-8">
+    <style>
+        hr {
+            border: 1px dotted;
+        }
+    </style>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
     <title>TAO FORM LAY SURVEY KHACH HANG </title>
 </head>
 <body>
+<h1> Market Reseach survey</h1>
+<p>please take a few moments to complete this satisfaction survey</p><br>
+<hr>
+<form action="" method="get">
+
+    <label for="age"><b>What is your age range?</b></label><br>
+    <select id="age" name="age">
+        <option value="18-24"> 18-24</option>
+        <option value="25-34" selected> 25-34</option>
+        <option value="độ tuổi"> 35-50</option>
+        <option value="độ tuổi"> 50+</option>
+    </select><br><br>
+    <label for="income"><b>What is your yearly incom range?</b></label><br>
+    <select id="income" name="income">
+        <option value="0-25000" selected> $0 - $25,000</option>
+        <option value="25001-50000"> $25,001 - 50,000</option>
+        <option value="$50,001 - $100,000">50,001 - $100,000</option>
+        <option value="100,000 +"> 100,000 +</option>
+    </select><br><br>
+    <div style="background-color: khaki">
+        <label for="other_input"><b>Gender ldentity</b></label><br>
+        <input type="radio" name="gender" id="male"> <label for="male">Male</label><br>
+        <input type="radio" name="gender" id="female" checked> <label for="female">Female</label><br>
+        <input type="radio" name="gender" id="non"> <label for="non">Nonbinary</label><br>
+        <input type="radio" name="gender" id="other"> <label for="other">Other</label><br>
+        <input type="text" id="other_input"><br>
+        <small> Maximum of <b> 250</b> characters. Currently Used:<b> 0</b> characters</small>
+    </div>
+    <br>
+    <label for="other"><b>Which of the following products have your purchased in the last 2 moths. Please check all that
+        apply.</b></label><br>
+    <input type="checkbox" id="product_1"> <label for="product_1">Product 1</label><br>
+    <input type="checkbox" id="product_2" checked> <label for="product_2">Product 2</label><br>
+    <input type="checkbox" id="product_3"> <label for="product_3">Product 3</label><br>
+    <div><br>
+        <label><b> How often would you use new product?</b></label><br>
+            <input type="radio" name="time" id="Daily"><label for="Daily"> Daily</label><br>
+            <input type="radio" name="time" id="Weekly"><label for="Weekly"> Weekly</label><br>
+            <input type="radio" name="time" id="Monthly"><label for="Monthly"> Monthly</label><br>
+    </div>
+    <br>
+    <label for="time"><b>What would you pay for the new product?</b></label><br>
+    <label>$</label><input type="text"><label>.</label><input type="text"><br>
+    <small> Dollars</small><small> Cents</small><br><br>
+    <label><b>What features would you like to see in the new product.</b></label><br>
+    <textarea name="features" id="features" cols="80" rows="5"></textarea><br><br>
+</form>
+<table width="500" border="1">please rate your level of agreement with the following statements.<br>
+    <td></td>
+    <td>Strong Disagree</td>
+    <td> Disagree</td>
+    <td> Agree</td>
+    </tr>
+    <tr>
+        <th> Our products are priced fairly</th>
+        <td><input type="radio"></td>
+        <td><input type="radio"></td>
+        <td><input type="radio"></td>
+
+    </tr>
+    <tr>
+        <th> Our products are high quality</th>
+        <td><input type="radio"></td>
+        <td><input type="radio"></td>
+        <td><input type="radio"></td>
+    </tr>
+    <tr>
+        <th> You would recommend our product to a friend or</th>
+        <td><input type="radio"></td>
+        <td><input type="radio"></td>
+        <td><input type="radio"></td>
+    </tr>
+</table>
+<input type="submit">
 
 </body>
 </html>
